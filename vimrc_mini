@@ -1,0 +1,16 @@
+se nocp ru nu ai si sta sm is acd wmnu so=5 siso=5 ch=2 bg=dark bs=indent,eol,start go= ww=b,s,<,>,[,]
+filet on
+syn on
+colo desert
+se gfn=DejaVu\ Sans\ Mono\ 10
+se mp=g++\ %\ -o\ %<\ -g\ -Wall
+map<f9> :make<cr>
+map<c-f9> :!./%<<cr>
+map<f8> :!gdb %<<cr>
+ino <silent> <s-tab> <bs><cr>}<esc>O
+
+
+"For Windows
+"se gfn=Courier New:h10
+"se mp=g++\ %\ -o\ %<.exe\ -g\ -Wall
+"map<C-F9> :!%<<CR>
