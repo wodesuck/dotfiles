@@ -1,8 +1,8 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray screen tmux vimperator keynav dunst
+	musca stalonetray screen tmux vimperator keynav dunst fcitx
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux vimperator keynav dunst
+	tmux vimperator keynav dunst fcitx
 
 sync:
 	git pull origin master
@@ -66,3 +66,9 @@ keynav:
 dunst:
 	mkdir -p ~/.config/dunst
 	ln -fs `pwd`/dunst/dunstrc ~/.config/dunst/dunstrc
+
+fcitx:
+	mkdir -p ~/.config/fcitx/rime
+	ln -fs `pwd`/fcitx/config ~/.config/fcitx
+	ln -fs `pwd`/fcitx/rime/default.custom.yaml \
+		~/.config/fcitx/rime
