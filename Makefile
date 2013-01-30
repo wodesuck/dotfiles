@@ -1,7 +1,8 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray screen
+	musca stalonetray screen tmux
 
-init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen
+init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
+	tmux
 
 sync:
 	git pull origin master
@@ -50,3 +51,6 @@ stalonetray:
 
 screen:
 	ln -fs `pwd`/screenrc ~/.screenrc
+
+tmux:
+	ln -fs `pwd`/tmux.conf ~/.tmux.conf
