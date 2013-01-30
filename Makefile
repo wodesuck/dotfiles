@@ -1,6 +1,6 @@
-.PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources
+.PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap
 
-init: vim zsh xinit Xresources
+init: vim zsh xinit Xresources Xmodmap
 
 sync:
 	git pull origin master
@@ -34,3 +34,6 @@ xinit:
 
 Xresources:
 	ln -fs `pwd`/Xresources ~/.Xresources
+
+Xmodmap:
+	ln -fs `pwd`/Xmodmap ~/.Xmodmap
