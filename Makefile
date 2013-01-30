@@ -1,6 +1,6 @@
-.PHONY: init sync vim vundle zsh oh-my-zsh xinit
+.PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources
 
-init: vim zsh xinit
+init: vim zsh xinit Xresources
 
 sync:
 	git pull origin master
@@ -31,3 +31,6 @@ zsh: oh-my-zsh
 
 xinit:
 	ln -fs `pwd`/xinitrc ~/.xinitrc
+
+Xresources:
+	ln -fs `pwd`/Xresources ~/.Xresources
