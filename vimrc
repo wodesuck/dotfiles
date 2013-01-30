@@ -32,7 +32,7 @@ Bundle 'pangloss/vim-javascript'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'nanotech/jellybeans.vim'
-Bundle 'altercation/solarized'
+Bundle 'altercation/vim-colors-solarized'
 
 " Encoding
 set encoding=utf-8
