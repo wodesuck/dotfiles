@@ -1,6 +1,7 @@
-.PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky
+.PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
+	musca
 
-init: vim zsh xinit Xresources Xmodmap conky
+init: vim zsh xinit Xresources Xmodmap conky musca
 
 sync:
 	git pull origin master
@@ -40,3 +41,6 @@ Xmodmap:
 
 conky:
 	ln -fs `pwd`/conkyrc ~/.conkyrc
+
+musca:
+	ln -fs `pwd`/musca_start ~/.musca_start

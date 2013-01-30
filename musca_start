@@ -1,0 +1,60 @@
+# for conky & stalonetray
+manage off Conky
+manage off stalonetray
+pad 0 0 20 0
+hook on ^(add|use) pad 0 0 20 0
+exec conky
+exec stalonetray
+exec dunst
+
+# key binding
+bind off all
+bind on Mod4+i hsplit 1/2
+bind on Mod4+o vsplit 1/2
+bind on Mod4+r remove
+bind on Mod4+f only
+bind on Mod4+x kill
+bind on Mod4+t exec xterm
+bind on Mod4+e exec xterm -e ranger
+bind on Mod4+q exec slock
+bind on Mod4+Tab cycle next
+bind on Mod4+Shift+Tab cycle prev
+bind on Mod4+w switch window
+bind on Mod4+g switch group
+bind on Mod4+space shell
+bind on Mod4+m command
+bind on Mod4+d dedicate flip
+bind on Mod4+a catchall flip
+bind on Mod4+u undo
+bind on Mod4+s stack flip
+bind on Mod4+Left use (prev)
+bind on Mod4+Right use (next)
+bind on Mod4+PageUp screen (prev)
+bind on Mod4+PageDown screen (next)
+bind on Mod4+h focus left
+bind on Mod4+l focus right
+bind on Mod4+k focus up
+bind on Mod4+j focus down
+bind on Mod4+Control+h resize left
+bind on Mod4+Control+l resize right
+bind on Mod4+Control+k resize up
+bind on Mod4+Control+j resize down
+bind on Mod4+Shift+h swap left
+bind on Mod4+Shift+l swap right
+bind on Mod4+Shift+k swap up
+bind on Mod4+Shift+j swap down
+bind on XF86AudioRaiseVolume exec amixer set Master playback 1+
+bind on XF86AudioLowerVolume exec amixer set Master playback 1-
+bind on XF86AudioMute exec amixer set Master toggle
+bind on XF86AudioPlay exec mpc toggle
+bind on XF86AudioNext exec mpc next
+bind on XF86AudioPrev exec mpc prev
+bind on XF86TouchpadToggle exec trackpad-toggle
+bind on Mod4+p exec dmenu_mpd
+
+# border
+set border_focus #204a87 
+set border_width 1
+
+# some behaviour
+set window_open_frame empty
