@@ -1,8 +1,8 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray screen tmux vimperator
+	musca stalonetray screen tmux vimperator keynav
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux vimperator
+	tmux vimperator keynav
 
 sync:
 	git pull origin master
@@ -59,3 +59,6 @@ vimperator:
 	ln -fs `pwd`/vimperatorrc ~/.vimperatorrc
 	rm -rf ~/.vimperator
 	ln -fs `pwd`/vimperator ~/.vimperator
+
+keynav:
+	ln -fs `pwd`/keynavrc ~/.keynavrc
