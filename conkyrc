@@ -1,0 +1,23 @@
+background no
+alignment top_left
+gap_x 0
+gap_y 0
+minimum_size 1366
+use_xft yes 
+xftfont DejaVu Sans:size=10
+update_interval 1
+total_run_times 0
+own_window no
+double_buffer yes
+use_spacer left
+border_inner_margin 0
+border_outer_margin 0
+
+TEXT
+${color white}$time | \
+cpu: $cpu% ${acpitemp}℃ | \
+ram: $memperc% | \
+vol:$if_mixer_mute [mute] $else $mixer% $endif|\
+${alignc -50}${font WenQuanYi Micro Hei:size=10}\
+mpd: [$mpd_status] ${mpd_smart 80}${font}\
+${alignr 130}| battery: $battery $battery_time |
