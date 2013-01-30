@@ -1,8 +1,9 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray screen tmux vimperator keynav dunst fcitx
+	musca stalonetray screen tmux vimperator keynav dunst fcitx \
+	fontconfig
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux vimperator keynav dunst fcitx
+	tmux vimperator keynav dunst fcitx fontconfig
 
 sync:
 	git pull origin master
@@ -72,3 +73,7 @@ fcitx:
 	ln -fs `pwd`/fcitx/config ~/.config/fcitx
 	ln -fs `pwd`/fcitx/rime/default.custom.yaml \
 		~/.config/fcitx/rime
+
+fontconfig:
+	mkdir -p ~/.config/fontconfig
+	ln -fs `pwd`/fontconfig/fonts.conf ~/.config/fontconfig
