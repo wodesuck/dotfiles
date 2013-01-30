@@ -1,8 +1,8 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray screen tmux
+	musca stalonetray screen tmux vimperator
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux
+	tmux vimperator
 
 sync:
 	git pull origin master
@@ -54,3 +54,8 @@ screen:
 
 tmux:
 	ln -fs `pwd`/tmux.conf ~/.tmux.conf
+
+vimperator:
+	ln -fs `pwd`/vimperatorrc ~/.vimperatorrc
+	rm -rf ~/.vimperator
+	ln -fs `pwd`/vimperator ~/.vimperator

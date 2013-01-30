@@ -1,0 +1,41 @@
+set maxitems=6
+let g:smooziee_scroll_amount=70
+noremap <C-h> gT
+noremap <C-l> gt
+noremap <C-S-h> :tabmove -1<CR>
+noremap <C-S-l> :tabmove +1<CR>
+vnoremap P y<Esc><Esc>P
+set hintchars=hjklasdfgyuiopqwertnmzxcvb
+set nextpattern=下一章,下一篇,下一张,下一节,下一版,下一页,下一頁,下页,后页,\\bnext\\b,^>$,^(>>|»)$,^(>|»),(>|»)$,\\bmore\\b
+set previouspattern=上一章,上一篇,上一张,上一节,上一版,上一页,上一頁,上页,前页,\\bprev|previous\\b,^<$,^(<<|«)$,^(<|«),(<|«)$
+set complete=slS
+set focuscontent
+
+" Caret Hint
+let g:caret_hint_key = 'm'
+let g:caret_hint_tail_key = 'M'
+let g:caret_hint_select_key = 'e'
+let g:caret_hint_select_tail_key = 'E'
+let g:caret_hint_swap_key = 's'
+
+" copy
+js <<EOM
+liberator.globalVariables.copy_templates = [
+  { label: 'titleAndURL',    value: '%TITLE%\n%URL%' },
+  { label: 'title',          value: '%TITLE%' },
+  { label: 'anchor',         value: '<a href="%URL%">%TITLE%</a>' },
+  { label: 'selanchor',      value: '<a href="%URL%" title="%TITLE%">%SEL%</a>' },
+  { label: 'markdown',       value: '[%TITLE%](%URL% "%TITLE%")' },
+  { label: 'markdownsel',    value: '[%SEL%](%URL% "%TITLE%")' },
+  { label: 'htmlblockquote', value: '<blockquote cite="%URL%" title="%TITLE%">%HTMLSEL%</blockquote>' }
+];
+EOM
+
+" feedsomekeys
+:command! -nargs=+ lazy autocmd VimperatorEnter .* <args>
+:lazy fmaps -u='mail\.google\.com/mail' c / j k n p o u e x s r a # [ ] ? gi gs gt gd ga gc gk gl
+:lazy fmaps -u='mail\.google\.com/mail/.*/[0-9a-f]+$' c / j,n k,p n,j p,k o u e x s r a # [ ] ? gi gs gt gd ga gc gk gl
+:lazy fmaps -u='www\.google\.com/reader' -events=vkeypress j k n p m s v A r S N P X O gh ga gs gt gu u / ? J K
+:lazy fmaps -u='web\.qq\.com' <A-c> <C-A-C> <A-S-Q> <C-Left> <C-Right> <A-W> <C-A-S> <C-Enter>
+
+" vim: set ft=vimperator ts=2 sw=2 sta et:
