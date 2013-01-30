@@ -1,7 +1,7 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
-	musca stalonetray
+	musca stalonetray screen
 
-init: vim zsh xinit Xresources Xmodmap conky musca stalonetray
+init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen
 
 sync:
 	git pull origin master
@@ -47,3 +47,6 @@ musca:
 
 stalonetray:
 	ln -fs `pwd`/stalonetrayrc ~/.stalonetrayrc
+
+screen:
+	ln -fs `pwd`/screenrc ~/.screenrc
