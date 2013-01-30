@@ -1,6 +1,6 @@
-.PHONY: init sync vim vundle zsh oh-my-zsh
+.PHONY: init sync vim vundle zsh oh-my-zsh xinit
 
-init: vim zsh
+init: vim zsh xinit
 
 sync:
 	git pull origin master
@@ -28,3 +28,6 @@ zsh: oh-my-zsh
 	ln -fs `pwd`/zshrc ~/.zshrc
 	rm -rf ~/.oh-my-zsh/custom
 	ln -fs `pwd`/oh-my-zsh/custom ~/.oh-my-zsh
+
+xinit:
+	ln -fs `pwd`/xinitrc ~/.xinitrc
