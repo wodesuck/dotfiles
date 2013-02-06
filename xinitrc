@@ -38,7 +38,7 @@ keynav &
 # exec startxfce4
 #exec openbox-session
 #exec awesome
-#exec i3
+exec i3
 #exec herbstluftwm
-exec musca
+#exec musca
 #exec dwm
