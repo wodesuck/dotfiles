@@ -35,7 +35,8 @@ xterm*faceNameDoublesize: WenQuanYi Micro Hei:pixelsize=14
 xterm*xftAntialias:       true
 xterm*cjkWidth:           false
 xterm*dynamicColors:      true
-xterm*utf8:               2
+xterm*utf8:               true
+xterm*utf8Title:          true
 xterm*eightBitInput:      false
 xterm*altSendsEscape:     true
 
