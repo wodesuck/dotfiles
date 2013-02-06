@@ -8,6 +8,7 @@ This is a repo for my dotfiles.
 unless you are sure that they won't be needed anymore.**
 
 Run this:
+
     git clone https://github.com/wodesuck/dotfiles.git
     cd dotfiles
     make init
