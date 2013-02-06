@@ -1,0 +1,14 @@
+out_to_x no
+out_to_console yes
+update_interval 1
+short_units
+
+TEXT
+${if_up eth0}${addr eth0}: ${downspeed eth0}↓ ${upspeed eth0}↑ | ${endif}\
+${if_up wlan0}${addr wlan0}: ${downspeed wlan0}↓ ${upspeed wlan0}↑ | ${endif}\
+cpu: $cpu% ${acpitemp}℃ | \
+ram: $memperc% | \
+vol:$if_mixer_mute [mute] $else $mixer% $endif| \
+mpd: [$mpd_status] ${mpd_smart 80} | \
+bat: $battery $battery_time | \
+$time
