@@ -26,14 +26,10 @@ appropriate files to your home directory. Once the directory
 ### Terminal
 
 * [Vim](http://www.vim.org) - a highly configurable, improved
-  version of the vi text editor.
-
+  version of the vi text editor.  
   With [Vundle](https://github.com/gmarik/vundle) to manage the plugins.
-
-* [Zsh](http://www.zsh.org) - the last shell you'll ever need.
-
+* [Zsh](http://www.zsh.org) - the last shell you'll ever need.  
   With [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) framework.
-
 * [screen](http://www.gnu.org/software/screen) &
   [tmux](http://tmux.sourceforge.net) - terminal multiplexers.
 * [ranger](http://ranger.nongnu.org) - a simple, vim-like file manager.
@@ -55,18 +51,16 @@ appropriate files to your home directory. Once the directory
 * [slock](http://tools.suckless.org/slock) - simple X display locker.
 * [keynav](http://www.semicomplete.com/projects/keynav) - ingenious and fast
   way to move the mouse on the screen with keystrokes.
-* [fcitx](http://code.google.com/p/fcitx) - a flexible input method framework.
-
+* [fcitx](http://code.google.com/p/fcitx) - a flexible input method
+  framework.  
   With [rime](http://code.google.com/p/rimeime) input method engine and
   [fcitx-cloudpinyin](https://github.com/csslayer/fcitx-cloudpinyin).
 * [Firefox](http://www.mozilla.org/projects/firefox) - standalone web browser
-  from mozzila.org.
-
+  from mozzila.org.  
   With [Vimperator](http://www.vimperator.org/vimperator).
 
 ### Other
 * [fbterm](http://code.google.com/p/fbterm) - a fast terminal emulator
-  for linux with frame buffer device or VESA video card.
-
+  for linux with frame buffer device or VESA video card.  
   With [fcitx-fbterm](http://code.google.com/p/fctix) for the input method
   support.
