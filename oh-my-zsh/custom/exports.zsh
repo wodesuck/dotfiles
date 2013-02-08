@@ -1,4 +1,4 @@
-export PERL5LIB="$HOME/perl5/lib/per5:$PERL5LIB"
+export PERL5LIB="$HOME/perl5/lib/perl5:$PERL5LIB"
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on'
 export NDK_ROOT=$ANDROID_NDK
 export ANDROID_SDK_ROOT=$ANDROID_HOME
