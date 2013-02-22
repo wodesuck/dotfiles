@@ -7,7 +7,9 @@ compiler gcc
 if &filetype=="c"
 	set makeprg=gcc\ %\ -o\ %<\ -g\ -Wall\ -lm
 elseif &filetype=="cpp"
-	set makeprg=g++\ %\ -o\ %<\ -g\ -Wall
+	set makeprg=g++\ %\ -o\ %<\ -g\ -Wall\ -std=c++11
+	let g:clang_user_options = '-std=c++11'
+	let g:syntastic_cpp_compiler_options = ' -std=c++11'
 endif
 
 let g:SuperTabContextDefaultCompletionType="<c-x><c-u>"
