@@ -140,9 +140,8 @@ map <F10> :TagbarToggle<CR>
 map <C-c> <plug>NERDCommenterToggle
 map <F4> :NERDTreeToggle<CR>
 map <F5> :GundoToggle<CR>
+map <F3> :SyntasticToggleMode<CR>
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
-
-" vim: set ft=vim :
