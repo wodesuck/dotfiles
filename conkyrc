@@ -12,6 +12,7 @@ double_buffer yes
 use_spacer left
 border_inner_margin 0
 border_outer_margin 0
+short_units yes
 
 TEXT
 ${color white}$time | \
