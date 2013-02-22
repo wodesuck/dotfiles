@@ -106,8 +106,10 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exit
 
-bindsym Mod1+l exec slock
-bindsym Mod1+e exec xterm -e ranger
+bindsym Control+Mod1+l exec slock
+bindsym Control+Mod1+e exec xterm -e ranger
+bindsym Control+Mod1+p exec dmenu_mpd
+bindsym Control+Mod1+d exec dmenu_youdao
 bindsym XF86AudioRaiseVolume exec amixer set Master playback 1+
 bindsym XF86AudioLowerVolume exec amixer set Master playback 1-
 bindsym XF86AudioMute exec amixer set Master toggle
@@ -115,7 +117,6 @@ bindsym XF86AudioPlay exec mpc toggle
 bindsym XF86AudioNext exec mpc next
 bindsym XF86AudioPrev exec mpc prev
 bindsym XF86TouchpadToggle exec trackpad-toggle
-bindsym $mod+p exec dmenu_mpd
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
