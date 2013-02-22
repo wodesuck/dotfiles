@@ -4,3 +4,7 @@ oh-my-zsh/custom/example.zshcache
 vimperator/info/default/history-command
 vimperator/info/default/history-search
 vimperator/info/default/local-marks
+ranger/bookmarks
+ranger/history
+ranger/tagged
+ranger/__pycache__

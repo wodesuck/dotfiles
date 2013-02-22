@@ -1,9 +1,9 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
 	musca stalonetray screen tmux vimperator keynav dunst fcitx \
-	fontconfig i3
+	fontconfig i3 ranger
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux vimperator keynav dunst fcitx fontconfig i3
+	tmux vimperator keynav dunst fcitx fontconfig i3 ranger
 
 sync:
 	git pull origin master
@@ -81,3 +81,8 @@ fontconfig:
 i3:
 	rm -rf ~/.i3
 	ln -fs `pwd`/i3 ~/.i3
+
+ranger:
+	mkdir -p ~/.config
+	rm -rf ~/.config/ranger
+	ln -fs `pwd`/ranger ~/.config/ranger
