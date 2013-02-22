@@ -23,14 +23,11 @@ fi
 
 export LANG="zh_CN.UTF-8"
 
-numlockx &
-
 export XMODIFIERS="@im=fcitx"
 export GTK_IM_MODULE="fcitx"
 export QT_IM_MODULE="fcitx"
 fcitx -r &
-wicd-client --tray &
-#dropboxd &
+dropboxd &
 keynav &
 
 # exec gnome-session
