@@ -4,6 +4,7 @@ export NDK_ROOT=$ANDROID_NDK
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export GEM_HOME="$HOME/.gem/ruby/1.9.1/gems"
 export PATH="$PATH:$HOME/.gem/ruby/1.9.1/bin:$HOME/cxoffice/bin:$HOME/script"
+export OTIMPUS_PREFIX="primusrun"
 
 if [[ -n "$DISPLAY" ]]; then
     export LANG='zh_CN.UTF-8'
