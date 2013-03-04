@@ -5,9 +5,9 @@ set noexpandtab
 compiler gcc
 
 if &filetype=="c"
-	set makeprg=gcc\ %\ -o\ %<\ -g\ -Wall\ -lm
+	set makeprg=gcc\ %\ -o\ %<\ -g\ -Wall\ -lm\ -std=c99
 elseif &filetype=="cpp"
-	set makeprg=g++\ %\ -o\ %<\ -g\ -Wall\ -std=c++11
+	set makeprg=g++\ %\ -o\ %<\ -g\ -Wall\ -lm\ -std=c++11
 	let g:clang_user_options = '-std=c++11'
 	let g:syntastic_cpp_compiler_options = ' -std=c++11'
 endif
