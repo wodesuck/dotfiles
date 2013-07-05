@@ -5,7 +5,6 @@ pad 0 0 20 0
 hook on ^(add|use) pad 0 0 20 0
 exec conky
 exec stalonetray
-exec dunst
 
 # key binding
 bind off all
