@@ -1,9 +1,9 @@
 .PHONY: init sync vim vundle zsh oh-my-zsh xinit Xresources Xmodmap conky \
 	musca stalonetray screen tmux vimperator keynav dunst fcitx \
-	fontconfig i3 ranger
+	fontconfig i3 ranger openbox
 
 init: vim zsh xinit Xresources Xmodmap conky musca stalonetray screen \
-	tmux vimperator keynav dunst fcitx fontconfig i3 ranger
+	tmux vimperator keynav dunst fcitx fontconfig i3 ranger openbox
 
 sync:
 	git pull origin master
@@ -86,3 +86,7 @@ ranger:
 	mkdir -p ~/.config
 	rm -rf ~/.config/ranger
 	ln -fs `pwd`/ranger ~/.config/ranger
+
+openbox:
+	mkdir -p ~/.config/openbox
+	ln -fs `pwd`/openbox/* ~/.config/openbox
