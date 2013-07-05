@@ -27,8 +27,9 @@ Bundle 'sjl/gundo.vim'
 Bundle 'ervandew/supertab'
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tomtom/tlib_vim'
-Bundle 'garbas/vim-snipmate'
-Bundle 'wodesuck/snipmate-snippets'
+" Bundle 'garbas/vim-snipmate'
+" Bundle 'wodesuck/snipmate-snippets'
+Bundle 'UltiSnips'
 Bundle 'tpope/vim-surround'
 Bundle 'Rip-Rip/clang_complete'
 Bundle 'mattn/zencoding-vim'
@@ -131,6 +132,13 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 " Setting for supertab
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
+
+" Setting for UltiSnips
+let g:UltiSnipsSnippetDirectories = ["snippets"]
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+let g:UltiSnipsListSnippets = "<c-x><c-x>"
 
 " Setting the leader key
 let mapleader = ';'
