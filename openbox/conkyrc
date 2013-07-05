@@ -1,0 +1,78 @@
+background no
+alignment top_right
+gap_x 12
+gap_y 12
+minimum_size 200
+maximum_width 200
+use_xft yes
+xftfont DejaVu Sans:size=8
+update_interval 1
+total_run_times 0
+own_window yes
+own_window_type override
+own_window_transparent yes
+double_buffer yes
+cpu_avg_samples 4
+override_utf8_locale yes
+if_up_strictness address
+
+TEXT
+${font sans-serif:bold:size=8}SYSTEM ${hr 2}
+${font sans-serif:normal:size=8}$sysname $kernel $alignr $machine
+Host:$alignr$nodename
+Uptime:$alignr$uptime
+File System: $alignr${fs_type}
+Battery: $alignr${battery_time} ${battery}
+
+${font sans-serif:bold:size=8}PROCESSORS ${hr 2}
+${font sans-serif:normal:size=8}$cpugraph
+CPU1: ${cpu cpu1}% ${cpubar cpu1}
+CPU2: ${cpu cpu2}% ${cpubar cpu2}
+CPU3: ${cpu cpu3}% ${cpubar cpu3}
+CPU4: ${cpu cpu4}% ${cpubar cpu4}
+
+${font sans-serif:bold:size=8}MEMORY ${hr 2}
+${font sans-serif:normal:size=8}RAM $alignc $mem / $memmax $alignr $memperc%
+$membar
+
+${font sans-serif:bold:size=8}DISKS ${hr 2}
+${font sans-serif:normal:size=8}/ $alignc ${fs_used /} / ${fs_size /} $alignr ${fs_used_perc /}%
+${fs_bar /}
+/home $alignc ${fs_used /home} / ${fs_size /home} $alignr ${fs_used_perc /home}%
+${fs_bar /home}
+/var $alignc ${fs_used /var} / ${fs_size /var} $alignr ${fs_used_perc /var}%
+${fs_bar /var}
+SWAP $alignc ${swap} / ${swapmax} $alignr ${swapperc}%
+${swapbar}
+
+${font sans-serif:bold:size=8}TOP PROCESSES ${hr 2}
+${font sans-serif:normal:size=8}${top_mem name 1}${alignr}${top mem 1} %
+${top_mem name 2}${alignr}${top mem 2} %
+$font${top_mem name 3}${alignr}${top mem 3} %
+$font${top_mem name 4}${alignr}${top mem 4} %
+$font${top_mem name 5}${alignr}${top mem 5} %
+
+${font sans-serif:bold:size=8}NETWORK ${hr 2}
+${font sans-serif:normal:size=8}\
+${if_up eth0}\
+IP address: $alignr ${addr eth0}
+Connection quality: $alignr ${wireless_link_qual_perc eth0}%
+${downspeedgraph eth0}
+DLS:${downspeed eth0} $alignr total: ${totaldown eth0}
+${upspeedgraph eth0}
+ULS:${upspeed eth0} $alignr total: ${totalup eth0}
+${else}${if_up wlan0}\
+IP address: $alignr ${addr wlan0}
+ESSID: $alignr ${wireless_essid wlan0}
+Connection quality: $alignr ${wireless_link_qual_perc wlan0}%
+${downspeedgraph wlan0}
+DLS:${downspeed wlan0} $alignr total: ${totaldown wlan0}
+${upspeedgraph wlan0}
+ULS:${upspeed wlan0} $alignr total: ${totalup wlan0}
+${endif}
+${endif}
+
+${font sans-serif:bold:size=8}MPD ${hr 2}
+${font WenQuanYi Micro Hei:size=8}$mpd_artist - $mpd_title
+${font sans-serif:normal:size=8}$mpd_status $alignr$mpd_elapsed/$mpd_length
+${mpd_bar}
