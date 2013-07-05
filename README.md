@@ -40,8 +40,11 @@ appropriate files to your home directory. Once the directory
 
 ### X Window
 
+* [i3](http://i3wm.org) - a tiling window manager. (for daily use)
+* [openbox](http://openbox.org) - a highly configurable, next generation
+  window manager. (a stacking wm as my secondary wm choice)
 * [Musca](http://aerosuidae.net/musca.html) - a simple tiling
-  window manager for X.
+  window manager for X. (deprecated, for its devlopment halted long time ago)
 * [dmenu](http://tools.suckless.org/dmenu) - a dynamic menu for X.
 * [xterm](http://invisibe-island.net/xterm) - X terminal emulator.
 * [Conky](http://conky.sourceforge.net) - a light-weight system monitor.
@@ -54,7 +57,7 @@ appropriate files to your home directory. Once the directory
 * [fcitx](http://code.google.com/p/fcitx) - a flexible input method
   framework.  
   With [rime](http://code.google.com/p/rimeime) input method engine and
-  [fcitx-cloudpinyin](https://github.com/csslayer/fcitx-cloudpinyin).
+  [fcitx-sougoupinyin](http://packages.linuxdeepin.com/deepin/pool/non-free/f/fcitx-sogoupinyin-release).
 * [Firefox](http://www.mozilla.org/projects/firefox) - standalone web browser
   from mozzila.org.  
   With [Vimperator](http://www.vimperator.org/vimperator).
