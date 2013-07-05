@@ -29,6 +29,7 @@ oh-my-zsh:
 
 zsh: oh-my-zsh
 	ln -fs `pwd`/zshrc ~/.zshrc
+	ln -fs `pwd`/zshenv ~/.zshenv
 	rm -rf ~/.oh-my-zsh/custom
 	ln -fs `pwd`/oh-my-zsh/custom ~/.oh-my-zsh
 
