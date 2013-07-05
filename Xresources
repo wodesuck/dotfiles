@@ -42,10 +42,9 @@ xterm*altSendsEscape:     true
 
 ! urxvt ----------------------------------------------------------------------
 URxvt.geometry:        80x25
-URxvt.background:      [80]#000000
+URxvt.background:      [90]#000000
 URxvt.foreground:      #babdb6
 URxvt.scrollBar:       False
 URxvt.secondaryScroll: true
 URxvt.depth:           32
-URxvt.font:            xft:DejaVu Sans Mono:pixelsize=14,\
-                       xft:WenQuanYi Micro Hei Mono:pixelsize=14
+URxvt.font:            xft:DejaVu Sans Mono:pixelsize=13, xft:WenQuanYi Micro Hei Mono:pixelsize=13
