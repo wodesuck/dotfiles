@@ -30,12 +30,12 @@ fcitx -r &
 dropboxd &
 keynav &
 
-# exec gnome-session
-# exec startkde
-# exec startxfce4
-#exec openbox-session
-#exec awesome
-exec i3
-#exec herbstluftwm
-#exec musca
-#exec dwm
+case $1 in
+i3)      exec i3 ;;
+openbox) exec openbox-session ;;
+musca)   exec musca ;;
+xmonad)  exec xmonad ;;
+evilwm)  exec evilwm -mask1 mod4 ;;
+stumpwm) exec ~/project/stumpwm/stumpwm ;;
+*)       exec i3 ;;
+esac
