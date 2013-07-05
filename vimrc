@@ -14,8 +14,11 @@ Bundle 'Align'
 Bundle 'matchit.zip'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'terryma/vim-multiple-cursors'
 Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/nerdcommenter'
+" Bundle 'scrooloose/nerdcommenter'
+Bundle 'tomtom/tcomment_vim'
+" Bundle 'vim-commentary'
 Bundle 'scrooloose/syntastic'
 Bundle 'tpope/vim-fugitive'
 Bundle 'mattn/webapi-vim'
@@ -137,7 +140,6 @@ map <F9> :make<CR>
 map <C-F9> :!./%<<CR>
 map <F8> :!gdb %<<CR>
 map <F10> :TagbarToggle<CR>
-map <C-c> <plug>NERDCommenterToggle
 map <F4> :NERDTreeToggle<CR>
 map <F5> :GundoToggle<CR>
 map <F3> :SyntasticToggleMode<CR>
