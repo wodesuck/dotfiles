@@ -106,7 +106,7 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exit
 
-bindsym Control+Mod1+l exec slock
+bindsym $mod+Shift+z exec slock
 bindsym Control+Mod1+e exec xterm -e ranger
 bindsym Control+Mod1+p exec dmenu_mpd
 bindsym Control+Mod1+d exec dmenu_youdao
